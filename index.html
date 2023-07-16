@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="main.js" defer></script>
+  <link 
+        rel="shortcut icon" 
+        href="./TODOfavi.png"
+        type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>TODOs</title>
+
+</head>
+
+<body>
+    <h2>TODO-LIST</h2>
+    <form id="form">
+        <label for="Date">When we start?
+            <input type="date" id="startDate" name="date"
+                   value="2023-07-07"
+                   min="2023-01-01" max="">
+        
+         <input type="text" placeholder="TASK" required name="task">
+            <button type="submit" class="btn">Add target</button>
+        </label>
+    </form>
+  <ul id="tasks-list">
+  </ul>
+  <div class="btn-container">
+    <button id="clear" class="btn left">Clear TODO-LIST</button>
+    <button id="clear-one" class="btn right">Remove the oldest</button>
+  </div>
+  
+</body>
+
+</html>
